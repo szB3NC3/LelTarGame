@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+	font-family: ABeeZee, Asap, sans-serif;
+}
+code {
+	font-family: JetBrains Mono, monospace;
+}
+.navbar {
+	box-shadow: 5px 0 10px #000;
+}
+.content {
+	margin-top: 20px;
+}
