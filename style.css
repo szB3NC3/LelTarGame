@@ -19,3 +19,10 @@ p {
 .content {
 	margin-top: 20px;
 }
+footer {
+	box-shadow: 5px 0 10px #000;
+}
+.copyleft {
+	display: inline-block;
+	transform: rotate(180deg);
+}
