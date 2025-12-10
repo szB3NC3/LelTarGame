@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="hu" data-bs-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.min.css">
+	<link rel="shortcut icon" href="./res/icons/favicon.png" type="image/png">
+	<title>Leaderboards | Lel.tar: The endless search for the missing package...</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary border-bottom border-body">
+			<div class="container">
+				<a class="navbar-brand" href="./index.html"><img src="./res/icons/favicon.png" alt="Lel.tar" height="32"> Lel.tar</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mr-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./changelog.html">Changelog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link dl-link" href="./download.html">Downloads</a>
+						</li>
+						<li class="nav-item">
+							<a class="text-warning nav-link lb-link active" aria-current="page" href="./leaderboards.html">Leaderboards <i class="bi bi-box-arrow-up-right"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/szB3NC3/lel-tar" target="_blank">GitHub <i class="bi bi-box-arrow-up-right"></i></a>
+						</li>
+					</ul>
+					<div class="justify-content-end" id="account-section"></div>
+				</div>
+			</div>
+		</nav>
+		<noscript>
+			<div class="container-fluid noscript">
+				<div class="alert alert-danger">❌ <b>Your browser has JavaScript disabled or is not supported!</b> Crucial components of the site will NOT work at all as a result!<br />This can be caused by your browser or ad blocker settings blocking any JavaScript from running, or that you're running this on an unsupported web browser.<br />Please consider enabling JavaScript or using a supported web browser.</div>
+			</div>
+		</noscript>
+	</header>
+	<div class="content container">
+		<div class="d-flex align-items-center">
+			<div class="flex-fill"><h1 class="mb-0">Leaderboards</h1></div>
+			<div class="text-end">
+				<div class="btn-group dropdown" id="filter-by">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Filter by
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><h6 class="dropdown-header">Difficulty</h6></li>
+						<li><button class="dropdown-item">Normal</button></li>
+						<li><button class="dropdown-item">Hard</button></li>
+						<li><button class="dropdown-item">Lunatic</button></li>
+						<li><hr class="dropdown-divider" /></li>
+						<li><h6 class="dropdown-header">Country</h6></li>
+					</ul>
+				</div>
+				<div class="btn-group dropdown" id="sort-by">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Sort by
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end">
+						<li><button class="dropdown-item active">Score and Difficulty</button></li>
+						<li><button class="dropdown-item">Only by Score</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr />
+		
+		<div class="alert alert-info" id="lb-req-notice">
+			<div class="d-flex align-items-center">
+				<div class="flex-fill">ℹ️ Only scores above <strong>500,000</strong> and <strong>Easy</strong> difficulty can appear on the leaderboards!</div>
+				<div>
+					<button type="button" class="btn-close" aria-label="Close" onclick="closeReqNotice()"></button>
+				</div>
+			</div>
+		</div>
+		<div class="table-responsive-lg">
+			<table class="table table-striped table-sm caption-top">
+				<caption><em>The leaderboards have not been implemented yet, but here's what you can look forward to in the meantime...</em></caption>
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Username / Player</th>
+						<th scope="col">Score</th>
+						<th scope="col">Difficulty</th>
+						<th scope="col">Achieved</th>
+					</tr>
+				</thead>
+				<tbody class="table-group-divider">
+					<tr>
+						<th scope="row">1</th>
+						<td>Ellie9192</td>
+						<td>1,232,600</td>
+						<td>Lunatic</td>
+						<td>January 21st, 2026 @ 16:03:32</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>xXx_DemonSlayer124_xXx</td>
+						<td>986,450</td>
+						<td>Lunatic</td>
+						<td>January 14th, 2026 @ 18:21:44</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>test_account</td>
+						<td>625,500</td>
+						<td>Hard</td>
+						<td>November 18th, 2025 @ 13:56:01</td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<td>gamerboy87</td>
+						<td>502,850</td>
+						<td>Normal</td>
+						<td>December 10th, 2025 @ 12:00:09</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script>
+	var OkIGetTheReqs = false
+	function closeReqNotice() {
+		document.getElementById("lb-req-notice").style.display = "none";
+	}
+	function showReqNotice() {
+		document.getElementById("lb-req-notice").style.display = "block";
+	}
+	
+	if (OkIGetTheReqs) {
+		closeReqNotice()
+	}
+	else {
+		showReqNotice()
+	}
+</script>
+</html>
